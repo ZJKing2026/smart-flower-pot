@@ -1,0 +1,22 @@
+# Arduino 编译产物
+.build/
+.pio/
+
+# 第三方 Arduino 库（本地安装，不上传）
+libraries/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# 环境配置
+.env
+
+# IDE
+.idea/
+.vscode/
+
+# 日志
+*.log

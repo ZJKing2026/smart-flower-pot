@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>智能花盆</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <p class="eyebrow">SMART FLOWER POT</p>
+      <h1>智能花盆</h1>
+      <p id="deviceState" class="device-state">等待设备上报</p>
+    </header>
+
+    <section class="card">
+      <h2>实时状态</h2>
+      <p id="updatedAt" class="muted">暂无数据</p>
+      <div id="metrics" class="metrics"></div>
+    </section>
+
+    <section class="card">
+      <h2>AI 养护建议</h2>
+      <button id="adviceButton" type="button">分析当前环境</button>
+      <p id="adviceText" class="result">尚未分析</p>
+    </section>
+
+    <section class="card">
+      <h2>花盆助手</h2>
+      <div id="chatLog" class="chat-log" aria-live="polite"></div>
+      <label for="chatInput">你的问题</label>
+      <textarea id="chatInput" rows="3" placeholder="例如：现在需要浇水吗？"></textarea>
+      <button id="chatButton" type="button">发送问题</button>
+    </section>
+
+    <section class="card warning-card">
+      <h2>手动浇水</h2>
+      <p>水泵由 ESP32 本地保护，最长运行 3 秒。</p>
+      <div class="button-row">
+        <button id="waterButton" type="button">开始浇水</button>
+        <button id="stopButton" class="secondary" type="button">停止浇水</button>
+      </div>
+      <p id="commandResult" class="result"></p>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

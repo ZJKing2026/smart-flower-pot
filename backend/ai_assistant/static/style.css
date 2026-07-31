@@ -1,0 +1,44 @@
+:root {
+  color-scheme: light;
+  font-family: "Microsoft YaHei", sans-serif;
+  background: #eef5ef;
+  color: #17351f;
+}
+
+* { box-sizing: border-box; }
+
+body { margin: 0; }
+
+.page { max-width: 680px; margin: 0 auto; padding: 24px 16px 48px; }
+
+.hero { padding: 24px; border-radius: 22px; color: #fff; background: linear-gradient(135deg, #23653a, #4b9866); }
+
+.eyebrow { margin: 0; font-size: 12px; letter-spacing: 1.2px; opacity: .8; }
+
+h1 { margin: 8px 0; font-size: 32px; }
+h2 { margin-top: 0; font-size: 20px; }
+
+.device-state, .muted, .result { margin-bottom: 0; }
+.muted { color: #65736a; font-size: 14px; }
+
+.card { margin-top: 16px; padding: 20px; border: 1px solid #d9e7dc; border-radius: 18px; background: #fff; box-shadow: 0 6px 20px rgba(26, 72, 40, .08); }
+
+.metrics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 16px; }
+.metric { padding: 12px; border-radius: 12px; background: #f3f8f4; }
+.metric span { display: block; color: #65736a; font-size: 13px; }
+.metric strong { display: block; margin-top: 4px; font-size: 18px; }
+
+button { width: 100%; margin-top: 12px; padding: 12px 16px; border: 0; border-radius: 10px; background: #277443; color: #fff; font: inherit; font-weight: 700; cursor: pointer; }
+button:disabled { cursor: not-allowed; opacity: .55; }
+button.secondary { background: #506057; }
+
+textarea { width: 100%; margin-top: 8px; padding: 10px; border: 1px solid #b9cdc0; border-radius: 10px; font: inherit; resize: vertical; }
+
+.chat-log { min-height: 28px; white-space: pre-wrap; color: #304f38; }
+.button-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.warning-card { border-color: #e7cf91; }
+
+@media (max-width: 390px) {
+  .metrics { grid-template-columns: 1fr; }
+  .button-row { grid-template-columns: 1fr; }
+}
